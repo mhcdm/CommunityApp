@@ -22,7 +22,8 @@ namespace CommunityApp.Pages_CityPages
 
         public async Task OnGetAsync()
         {
-            City = await _context.Cities.ToListAsync();
+            City = await _context.Cities
+                .Include(c => c.Province).ToListAsync();
         }
     }
 }

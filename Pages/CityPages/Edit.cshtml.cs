@@ -35,6 +35,7 @@ namespace CommunityApp.Pages_CityPages
                 return NotFound();
             }
             City = city;
+           ViewData["ProvinceCode"] = new SelectList(_context.Provinces, "ProvinceCode", "ProvinceCode");
             return Page();
         }
 

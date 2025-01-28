@@ -24,6 +24,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.City.Population)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.City.Province)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City.Province.ProvinceCode)
+        </dd>
     </dl>
     
     <form method="post">

@@ -27,6 +27,12 @@
                 <span asp-validation-for="City.Population" class="text-danger"></span>
             </div>
             <div class="form-group">
+                
+                <label asp-for="City.ProvinceCode" class="control-label"></label>
+                <select asp-for="City.ProvinceCode" class="form-control" asp-items="ViewBag.ProvinceCode"></select>
+                <span asp-validation-for="City.ProvinceCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
